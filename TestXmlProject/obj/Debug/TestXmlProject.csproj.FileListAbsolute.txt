@@ -1,0 +1,6 @@
+D:\gitHub\TestXmlProject\TestXmlProject\bin\Debug\TestXmlProject.exe.config
+D:\gitHub\TestXmlProject\TestXmlProject\bin\Debug\TestXmlProject.exe
+D:\gitHub\TestXmlProject\TestXmlProject\bin\Debug\TestXmlProject.pdb
+D:\gitHub\TestXmlProject\TestXmlProject\obj\Debug\TestXmlProject.csprojResolveAssemblyReference.cache
+D:\gitHub\TestXmlProject\TestXmlProject\obj\Debug\TestXmlProject.exe
+D:\gitHub\TestXmlProject\TestXmlProject\obj\Debug\TestXmlProject.pdb

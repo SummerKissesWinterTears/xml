@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<endpoints>
+  <item>
+    <type>oper</type>
+    <name>Рабочий (оператор) 1</name>
+    <address>http://service.com:8007/oper1/MBroker.svc</address>
+    <wsdl>http://service.com:8007/oper1/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>oper</type>
+    <name>Рабочий (оператор) 2</name>
+    <address>http://service.com:8007/oper2/MBroker.svc</address>
+    <wsdl>http://service.com:8007/oper2/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>oper</type>
+    <name>Рабочий (оператор) 3</name>
+    <address>http://service.com:8009/oper3/MBroker.svc</address>
+    <wsdl>http://service.com:8009/oper3/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>oper</type>
+    <name>Рабочий (оператор) 4</name>
+    <address>http://service.com:8009/oper4/MBroker.svc</address>
+    <wsdl>http://service.com:8009/oper4/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>work</type>
+    <name>Рабочий 1</name>
+    <address>http://service.com:8059/work1/MBroker.svc</address>
+    <wsdl>http://service.com:8059/work1/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>work</type>
+    <name>Рабочий 2</name>
+    <address>http://service.com:8059/work2/MBroker.svc</address>
+    <wsdl>http://service.com:8059/work2/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>work</type>
+    <name>Рабочий 3</name>
+    <address>http://service.com:8059/work3/MBroker.svc</address>
+    <wsdl>http://service.com:8059/work3/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>work</type>
+    <name>Рабочий 4</name>
+    <address>http://service.com:8059/work4/MBroker.svc</address>
+    <wsdl>http://service.com:8059/work4/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>work</type>
+    <name>Рабочий 5</name>
+    <address>http://192.168.0.2:8985/MBroker.svc</address>
+    <wsdl>http://192.168.0.2:8985/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>false</enabled>
+  </item>
+  <item>
+    <type>work</type>
+    <name>Рабочий 6</name>
+    <address>http://192.168.0.2:1234/MBroker.svc</address>
+    <wsdl>http://192.168.0.2:1234/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>false</enabled>
+  </item>
+  <item>
+    <type>work</type>
+    <name>Рабочий (Челны)</name>
+    <address>http://192.168.0.3/MBroker_webarm_test/MBroker.svc</address>
+    <wsdl>http://192.168.0.3/MBroker_webarm_test/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>false</enabled>
+  </item>
+  <item>
+    <type>edu</type>
+    <name>Обучение</name>
+    <address>http://service.com:8156/edu1/MBroker.svc</address>
+    <wsdl>http://service.com:8156/edu1/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>false</enabled>
+  </item>
+  <item>
+    <type>edu</type>
+    <name>Обучение 2</name>
+    <address>http://service.com:8156/edu2/MBroker.svc</address>
+    <wsdl>http://service.com:8156/edu2/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>test</type>
+    <name>Тестовый</name>
+    <address>http://service.com:8217/test1/MBroker.svc</address>
+    <wsdl>http://service.com:8217/test1/MBroker.svc?wsdl</wsdl>
+    <primary>true</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>dev</type>
+    <name>Разработка (1)</name>
+    <address>http://dev.service.com:8251/dev1/MBroker.svc</address>
+    <wsdl>http://dev.service.com:8251/dev1/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>dev</type>
+    <name>Разработка (Набережные Челны)</name>
+    <address>http://192.168.0.1:80/MBroker/MBroker.svc</address>
+    <wsdl>http://192.168.0.1:80/MBroker/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>false</enabled>
+  </item>
+  <item>
+    <type>mbrokertestpool</type>
+    <name>Тестовый пул</name>
+    <address>http://192.168.0.4/MBroker/MBroker.svc</address>
+    <wsdl>http://192.168.0.4/MBroker/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>beta</type>
+    <name>Бета</name>
+    <address>http://service.com:4321/MBroker.svc</address>
+    <wsdl>http://service.com:4321/MBroker.svc?wsdl</wsdl>
+    <primary>true</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>service</type>
+    <name>Сервисный 1</name>
+    <address>http://service.com:1111/services1/MBroker.svc</address>
+    <wsdl>http://service.com:1111/services1/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>servicedev</type>
+    <name>Сервисный (Разработка)</name>
+    <address>http://service.com:1111/services_dev1/MBroker.svc</address>
+    <wsdl>http://service.com:1111/services_dev1/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>servicetest</type>
+    <name>Сервисный (Тестовый)</name>
+    <address>http://service.com:1111/services_test1/MBroker.svc</address>
+    <wsdl>http://service.com:1111/services_test1/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>servicepay</type>
+    <name>Сервисный (Для платежей)</name>
+    <address>http://service.com:1111/services_pay1/MBroker.svc</address>
+    <wsdl>http://service.com:1111/services_pay1/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item> 
+  <item>
+    <type>fbroker</type>
+    <name>Файловый брокер</name>
+    <address>http://service.com:6549/fbroker1/MBroker/MBroker.svc</address>
+    <wsdl>http://service.com:6549/fbroker1/MBroker/MBroker.svc?wsdl</wsdl>
+    <primary>true</primary>
+    <enabled>true</enabled>
+  </item>
+  <item>
+    <type>fbrokerdev</type>
+    <name>Файловый брокер (разработка)</name>
+    <address>http://service.com:5555/MBroker/MBroker.svc</address>
+    <wsdl>http://service.com:5555/MBroker/MBroker.svc?wsdl</wsdl>
+    <primary>true</primary>
+    <enabled>true</enabled>
+  </item>
+    <item>
+    <type>mbrokertestpool</type>
+    <name>Тестовый пул</name>
+    <address>http://192.168.0.5/MBroker/MBroker.svc</address>
+    <wsdl>http://192.168.0.5/MBroker/MBroker.svc?wsdl</wsdl>
+    <primary>false</primary>
+    <enabled>true</enabled>
+  </item>
+</endpoints>
