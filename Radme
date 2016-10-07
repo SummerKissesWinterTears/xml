@@ -1,2 +1,2 @@
-An application parses an xml file with the help of LINQ. Output is in Console
+An application parses xml file with the help of LINQ. Output is in Console
 -You can type services(<type><\type) which are shown above to get the elements(<wsdl><\wsdl>)
