@@ -4,40 +4,38 @@ using System.Xml.Linq;
 
 namespace XmlParser
 {
-    class Program
+    class Initialization
     {
-        static void Main(string[] args)
+        //Загрузка xml файла. Файл services лежит в папке bin\Debug
+        XDocument doc = XDocument.Load("services.xml");
+        public void logic()
         {
-            //Загрузка xml файла. Файл services лежит в папке bin\Debug
-            XDocument doc = XDocument.Load("services.xml");
-
-            //Отбор по <item></item> нужных нам сервисов
-            var services = from r in doc.Descendants("item")
+            //Отбор по <item></item> нужных нам сервисов с помощью Linq
+            var services = from element in doc.Descendants("item")
                            select new
                            {
                                //В данном случае все что находится между <type></type>
-                               Item = r.Element("type").Value,
+                               Item = element.Element("type").Value,
                            };
             //Вывод             
-            foreach (var r in services)
+            foreach (var element in services)
             {
-                Console.WriteLine(r.Item);
+                Console.WriteLine(element.Item);
             }
-
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             Console.WriteLine();
             Console.WriteLine("Введите интересующий сервис, из списка выше. Чтобы выйти напечатайте exit");
 
             //Берём в качестве переменной, что введём в консоль
-            string inputservice = "";
+            //string inputservice = "";
 
             //Выполняем опрос пользователя, пока он не напишет "exit"
             do
             {
                 string inputservice2 = Console.ReadLine();
 
-                if (inputservice2 != "exit")
+                if (!"exit".Equals(inputservice2))
                 {
                     //Отбор по <item></item> и <type></type> нужных нам wsdl 
                     var selectedService2 = from r in doc.Descendants("item").Where(r => inputservice2 == r.Element("type").Value)
@@ -47,7 +45,7 @@ namespace XmlParser
                                            };
 
                     //Вывод об ошибке
-                    if (selectedService2.Any() != false)
+                    if (!selectedService2.Any().Equals(false))
                     {
                         foreach (var r in selectedService2)
                         {
@@ -61,10 +59,18 @@ namespace XmlParser
                 }
                 else
                 {
-                    inputservice = "exit";
+                    break;
                 }
             }
-            while (inputservice != "exit");
+            while (true);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Initialization init = new Initialization();
+            init.logic();
         }
     }
 }
