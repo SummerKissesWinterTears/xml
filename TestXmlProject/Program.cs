@@ -6,45 +6,43 @@ namespace XmlParser
 {
     class Initialization
     {
-        //Загрузка xml файла. Файл services лежит в папке bin\Debug
+        // Download an xml file. File "services" is in - bin\Debug
         XDocument doc = XDocument.Load("services.xml");
         public void logic()
-        {
-            //Отбор по <item></item> нужных нам сервисов с помощью Linq
+        {   
+            // Select from <item></item> to get elements we need(<type></type>) Linq
             var services = from element in doc.Descendants("item")
                            select new
                            {
-                               //В данном случае все что находится между <type></type>
+                               // In this case we looking for <type></type>
                                Item = element.Element("type").Value,
                            };
-            //Вывод             
+            // Output            
             foreach (var element in services)
             {
                 Console.WriteLine(element.Item);
             }
+
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             Console.WriteLine();
             Console.WriteLine("Введите интересующий сервис, из списка выше. Чтобы выйти напечатайте exit");
 
-            //Берём в качестве переменной, что введём в консоль
-            //string inputservice = "";
-
-            //Выполняем опрос пользователя, пока он не напишет "exit"
+            // It runs until user types "exit"
             do
             {
                 string inputservice2 = Console.ReadLine();
 
                 if (!"exit".Equals(inputservice2))
                 {
-                    //Отбор по <item></item> и <type></type> нужных нам wsdl 
+                    // Select from <item></item> and <type></type> to get(<wsdl></wsdl>) wsdl 
                     var selectedService2 = from r in doc.Descendants("item").Where(r => inputservice2 == r.Element("type").Value)
                                            select new
                                            {
                                                wsdl = r.Element("wsdl").Value,
                                            };
 
-                    //Вывод об ошибке
+                    // An error message
                     if (!selectedService2.Any().Equals(false))
                     {
                         foreach (var r in selectedService2)
